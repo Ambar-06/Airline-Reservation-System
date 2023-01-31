@@ -1,0 +1,153 @@
+.navbar{
+    background-color: rgb(0, 0, 0);
+    height: 55px;
+    position: sticky;
+}
+
+.list4nav{
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.items{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+a{
+    color: White;
+}
+a:active{
+    color: White;
+}
+a:hover{
+    color: brown;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 25px;
+    transition: 1s;
+}
+
+body{
+    align-items: center;
+}
+
+.slider{
+    position: relative;
+    height: 800px;
+}
+
+.slide0{
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+.slide1{
+    position: absolute;
+    display:flex;
+    width: 100%;
+}
+.slide2{
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+
+.btn{
+    margin-top: 18vh;
+    height: 65px;
+    width: 35px;
+    opacity: 35%;
+    background-color: black;
+    color: white;
+}
+.btn:hover{
+    height: 65px;
+    width: 35px;
+    opacity: 35%;
+    background-color: grey;
+    color: white;
+}
+
+.buttons{
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+/* .content{
+    border: 2px red solid;
+} */
+.info{
+    display: flex;
+}
+.bgcolor{
+    background-color:rgb(0, 0, 0) ;   
+    color: white;
+}
+.why_heading{
+    padding-left: 500px;
+    padding-right: auto;
+}
+.roundborder{
+
+    width: 130px;
+}
+.roundborder img{
+    padding: 5px;
+}
+.flex{
+    display: flex;
+}
+.m5{
+    margin: auto;
+}
+.footer_list{
+    list-style: none;
+}
+/* .bdr{
+    border: 5px rgb(255, 0, 0) solid;
+    border-radius: 100px;  
+    padding: 20px;  
+} */
+
+.image {
+    --g: 30px;     /* the gap */
+    --b: 3px;    /* border thickness*/
+    --c: #000000; /* the color */
+    
+    
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    /* filter: grayscale(50%); */
+    transition: .3s;
+  }
+  .image:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+  }
+
+  
+  /* body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    grid-auto-flow: column;
+    gap: 30px;
+    background: pink;
+  } */
+
+.reservationform{
+    margin-top: 150vh;
+    margin-bottom: auto;
+}

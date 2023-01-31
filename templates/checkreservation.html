@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% load static %}
+    {% block title %}Reservations{% endblock %}
+
+{% block body %}
+<div class="reservationform container" style="margin-top: 25vh; margin-bottom: 25vh;">
+    <h1>Check Your Reservation</h1>
+    <form method='post' action="/reservations">
+        <label for="ResrvationField">Enter your Reservation Number: </label>
+        <input type="text" placeholder="RN">
+        <input type="button" value="Search">
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<div class="slider" style="height:600px;">
+    <div class="slide0">
+        <img src="{% static 'imgs/a.jpg' %}" alt="" width="100%" height="600px">
+    </div>
+    <div class="slide1">
+        <img src="{% static 'imgs/b.jpg' %}" alt="" width="100%" height="600px">
+    </div>
+    <div class="slide2">     
+        <img src="{% static 'imgs/c.jpg' %}" alt="" width="100%" height="600px">
+    </div>
+    <div class="buttons">
+        <input class="btn prev" type="button" value="<">
+        <input class="btn next" type="button" value='>'>
+    </div>
+</div>
+<div class="info container">
+<div class="container mt-5 content">
+    <h2 id="numberOfFlights">0</h2><h2> Flights booked till now.</h2>
+    <p>We offer the best in class services.</p>
+</div>
+<div class="container mt-5 content">
+    <h2 id="numberOfPassengers">0</h2><h2> Passengers have been served.</h2>
+    <p>We offer the best in class services.</p>
+</div>
+</div>
+<div class='container jumbotron mt-5'> <h1>Who we are?</h1><p>We are proud to say that we offer the best in class services to our valued passengers. With a fleet of modern and well-maintained aircrafts, our passengers can expect a comfortable and safe journey every time they fly with us. Our team of dedicated and highly trained professionals ensures that every aspect of our services exceeds our passengers' expectations. To date, we have taken off over 350+ flights and served over 17000+ passengers, providing them with an unparalleled travel experience. Whether it's in-flight entertainment or gourmet dining options, our aim is to make every journey with us an unforgettable one.</p></div>
+
+<div class="why ml-5 mr-5">
+    <h1 class="why_heading">Why Us?</h1>
+    <div class="flex mt-5 ml-5 mr-5">
+    <div class="roundborder m5">
+        <div class="bdr">
+    <img src="{% static 'imgs/stocks.png'%}" width="120"  class="image">
+    </div>
+    <figcaption>Our investers' believe makes us a stronger company.</figcaption>
+    </div>
+    <div class="roundborder m5">
+        <div class="bdr">
+    <img src="{% static 'imgs/customer_care.png'%}" width="120" class="image">
+    </div>
+    <figcaption>We offer hard to match Customer Service to our customers.</figcaption>
+    </div>
+    <div class="roundborder m5">
+        <div class="bdr">
+    <img src="{% static 'imgs/mobility.png'%}" width="120" class="image">
+    </div>
+    <figcaption>You can access our services at your Home, comfortably.</figcaption>
+    </div>
+</div>
+</div>
+
+<script src="{% static 'index.js' %}"></script>
+{% endblock %}

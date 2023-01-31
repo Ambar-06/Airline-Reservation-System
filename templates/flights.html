@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% load static %}
+    {% block title %}Flights{% endblock %}
+
+{% block body %}
+<div class="reservationform container" style="margin-top: 25vh; margin-bottom: 25vh;">
+    <h1>Check Your Flight</h1>
+    <form method='post' action="/flights">
+        <label for="ResrvationField">Enter your Flight Number: </label>
+        <input type="text" placeholder="RN">
+        <label for="ResrvationField">Select Date: </label>
+        <input type="Date">
+        <input type="button" value="Search">
+    </form>
+</div>
+{% endblock %}
